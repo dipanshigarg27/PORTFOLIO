@@ -30,6 +30,7 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const baseUrl = import.meta.env.BASE_URL;
 
   // Scroll handler for frosted glass header & active section tracking
   useEffect(() => {
@@ -136,7 +137,7 @@ export default function App() {
         {/* CTA Resume & Hamburger */}
         <div className="flex items-center space-x-4">
           <a 
-            href="/resume.pdf" 
+            href={`${baseUrl}resume.pdf`} 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center space-x-2 py-2.5 px-5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 hover:from-accent-primary hover:to-accent-secondary hover:text-[#0A0A0F] border border-accent-primary/30 hover:border-transparent transition-all duration-300 shadow-[0_0_15px_rgba(124,106,247,0.1)] hover:shadow-[0_0_20px_rgba(124,106,247,0.3)]"
@@ -198,7 +199,7 @@ export default function App() {
             <div className="relative w-32 h-32 md:w-36 md:h-36 rounded-full p-[3px] bg-gradient-to-tr from-accent-primary via-accent-secondary to-accent-tertiary shadow-[0_0_30px_rgba(124,106,247,0.3)] animate-[pulse_4s_infinite]">
               <div className="relative w-full h-full rounded-full border-2 border-primary-bg overflow-hidden bg-primary-bg">
                 <img 
-                  src="/profile.png" 
+                  src={`${baseUrl}profile.png`} 
                   alt="Dipanshi Garg"
                   className="w-full h-full object-cover scale-[1.32]"
                   style={{ objectPosition: '50% 40%', transformOrigin: '50% 40%' }}
@@ -253,7 +254,7 @@ export default function App() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href={`${baseUrl}resume.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto flex items-center justify-center space-x-2 py-3 px-8 rounded-full text-xs font-bold uppercase tracking-wider bg-transparent border border-accent-primary/30 text-text-primary hover:border-accent-primary hover:bg-accent-primary/5 transition-all duration-300"
@@ -779,7 +780,7 @@ export default function App() {
 
             {/* Bottom Large CTA Button */}
             <a 
-              href="/resume.pdf" 
+              href={`${baseUrl}resume.pdf`} 
               target="_blank" 
               rel="noopener noreferrer"
               className="mt-12 w-full sm:w-auto flex items-center justify-center space-x-3 py-4 px-10 rounded-full text-xs font-bold uppercase tracking-widest bg-gradient-to-r from-accent-primary to-accent-secondary text-[#0A0A0F] hover:shadow-[0_0_30px_rgba(124,106,247,0.5)] transition-all duration-350 cursor-pointer"
