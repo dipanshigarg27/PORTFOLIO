@@ -121,7 +121,7 @@ You can download my latest resume directly from the portfolio.
 - 🌐 Portfolio: https://dipanshigarg27.github.io/PORTFOLIO/
 - 💼 LinkedIn: https://www.linkedin.com/in/dipanshi-garg
 - 💻 GitHub: https://github.com/dipanshigarg27
-- 📧 Email: *(Add your professional email here)*
+- 📧 Email: dipanshi.work@gmail.com
 
 ---
 
